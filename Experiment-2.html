@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Grid</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(0, 204, 255);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        .product p {
+            color: rgb(247, 55, 55);
+        }
+
+        .price {
+            font-size: 1.4em;
+            color: rgb(59, 239, 92);
+            margin-top: 10px;
+        }
+    </style>
+    <h2>Responsive Product Grid</h2>
+    
+    <div class="product-grid">
+        <div class="product">
+            <img src="https://rukminim2.flixcart.com/image/480/640/xif0q/mobile/b/f/5/-original-imahggexm5yafhez.jpeg?q=90" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Best Quality Product.</p>
+            <div class="price">Rs 52,000</div>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQpJaiSHlgDCp557mqNVJrlfRaTtmkzxksiTb2OrLMt-d4KVOCgKHEMPiqlc-1BJJoVgs86GlA4rwDgtsfOchSrPf5tZ8ZAE8TI8tQ6g1HyLWa4PMHO4raKQA" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Amazing Product.</p>
+            <div class="price">Rs 3000</div>
+        </div>
+        <div class="product">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2023/7/323356025/UR/EQ/WS/192140499/safeimagekit-resized-img-3--500x500.png"Product 3">
+            <h3>Product 3</h3>
+            <p>Nice Product.</p>
+            <div class="price">Rs 2000</div>
+        </div>
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/71Rt86TIqhL._AC_UF1000,1000_QL80_.jpg" alt="Product 4">
+            <h3>Product 4</h3>
+            <p>Good product.</p>
+            <div class="price">Rs 1500</div>
+        </div>
+        </div>
+</body>
+</html>
